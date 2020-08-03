@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		736FDE9224D88BDB00A55D9A /* ZoomCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 736FDE9024D88BDB00A55D9A /* ZoomCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		736FDE9D24D88E6C00A55D9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736FDE9A24D88E6C00A55D9A /* ViewController.swift */; };
+		736FDE9F24D88F6900A55D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736FDE9E24D88F6900A55D9A /* Main.storyboard */; };
+		736FDEA124D88F8000A55D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736FDEA024D88F8000A55D9A /* Assets.xcassets */; };
+		736FDEA424D8928300A55D9A /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736FDEA224D8928300A55D9A /* DataCollectionViewCell.swift */; };
+		736FDEA524D8928300A55D9A /* CollDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736FDEA324D8928300A55D9A /* CollDataModel.swift */; };
+		ADFDE45360C23D08BD199709 /* libPods-ZoomCollectionView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47119891E1DC3C769BC22B49 /* libPods-ZoomCollectionView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47119891E1DC3C769BC22B49 /* libPods-ZoomCollectionView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZoomCollectionView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		736FDE8D24D88BDB00A55D9A /* ZoomCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZoomCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		736FDE9024D88BDB00A55D9A /* ZoomCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomCollectionView.h; sourceTree = "<group>"; };
 		736FDE9124D88BDB00A55D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		736FDE9A24D88E6C00A55D9A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../XCodeProjects/ZoomCollectionView/ZoomCollectionView/ViewController.swift; sourceTree = "<group>"; };
+		736FDE9E24D88F6900A55D9A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		736FDEA024D88F8000A55D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		736FDEA224D8928300A55D9A /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		736FDEA324D8928300A55D9A /* CollDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollDataModel.swift; sourceTree = "<group>"; };
+		A8D3666A2E8A4A89B2AC4ED5 /* Pods-ZoomCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomCollectionView.release.xcconfig"; path = "Target Support Files/Pods-ZoomCollectionView/Pods-ZoomCollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		B96AF33B0BCB14457153E928 /* Pods-ZoomCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomCollectionView.debug.xcconfig"; path = "Target Support Files/Pods-ZoomCollectionView/Pods-ZoomCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFDE45360C23D08BD199709 /* libPods-ZoomCollectionView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15FE4940227E33BA224104E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B96AF33B0BCB14457153E928 /* Pods-ZoomCollectionView.debug.xcconfig */,
+				A8D3666A2E8A4A89B2AC4ED5 /* Pods-ZoomCollectionView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		736FDE8324D88BDB00A55D9A = {
 			isa = PBXGroup;
 			children = (
 				736FDE8F24D88BDB00A55D9A /* ZoomCollectionView */,
 				736FDE8E24D88BDB00A55D9A /* Products */,
+				15FE4940227E33BA224104E6 /* Pods */,
+				A1DF14898710520CF9F70522 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +72,23 @@
 		736FDE8F24D88BDB00A55D9A /* ZoomCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				736FDEA324D8928300A55D9A /* CollDataModel.swift */,
+				736FDEA224D8928300A55D9A /* DataCollectionViewCell.swift */,
+				736FDEA024D88F8000A55D9A /* Assets.xcassets */,
+				736FDE9E24D88F6900A55D9A /* Main.storyboard */,
+				736FDE9A24D88E6C00A55D9A /* ViewController.swift */,
 				736FDE9024D88BDB00A55D9A /* ZoomCollectionView.h */,
 				736FDE9124D88BDB00A55D9A /* Info.plist */,
 			);
 			path = ZoomCollectionView;
+			sourceTree = "<group>";
+		};
+		A1DF14898710520CF9F70522 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47119891E1DC3C769BC22B49 /* libPods-ZoomCollectionView.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +109,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 736FDE9524D88BDB00A55D9A /* Build configuration list for PBXNativeTarget "ZoomCollectionView" */;
 			buildPhases = (
+				CF85BC86F31EDD777BB71BB1 /* [CP] Check Pods Manifest.lock */,
 				736FDE8824D88BDB00A55D9A /* Headers */,
 				736FDE8924D88BDB00A55D9A /* Sources */,
 				736FDE8A24D88BDB00A55D9A /* Frameworks */,
@@ -95,6 +135,7 @@
 				TargetAttributes = {
 					736FDE8C24D88BDB00A55D9A = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -121,16 +162,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736FDEA124D88F8000A55D9A /* Assets.xcassets in Resources */,
+				736FDE9F24D88F6900A55D9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF85BC86F31EDD777BB71BB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZoomCollectionView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		736FDE8924D88BDB00A55D9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				736FDEA424D8928300A55D9A /* DataCollectionViewCell.swift in Sources */,
+				736FDEA524D8928300A55D9A /* CollDataModel.swift in Sources */,
+				736FDE9D24D88E6C00A55D9A /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +330,9 @@
 		};
 		736FDE9624D88BDB00A55D9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B96AF33B0BCB14457153E928 /* Pods-ZoomCollectionView.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GY8LXNR38D;
@@ -276,6 +349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.femargent.ZoomCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,7 +357,9 @@
 		};
 		736FDE9724D88BDB00A55D9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D3666A2E8A4A89B2AC4ED5 /* Pods-ZoomCollectionView.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GY8LXNR38D;

@@ -1,0 +1,6 @@
+module Pods_ZoomCollectionView {
+  umbrella header "Pods-ZoomCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}
