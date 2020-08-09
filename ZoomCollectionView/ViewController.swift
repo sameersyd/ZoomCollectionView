@@ -9,7 +9,7 @@
 import UIKit
 import UPCarouselFlowLayout
 
-public class ViewController: UIViewController {
+open class ViewController: UIViewController {
     
     @IBOutlet weak var collView: UICollectionView!
     
