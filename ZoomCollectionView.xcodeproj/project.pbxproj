@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73267D7824E0846F003530DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73267D7724E0846F003530DD /* ViewController.swift */; };
 		736FDE9224D88BDB00A55D9A /* ZoomCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 736FDE9024D88BDB00A55D9A /* ZoomCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		736FDE9D24D88E6C00A55D9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736FDE9A24D88E6C00A55D9A /* ViewController.swift */; };
 		736FDE9F24D88F6900A55D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736FDE9E24D88F6900A55D9A /* Main.storyboard */; };
 		736FDEA124D88F8000A55D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736FDEA024D88F8000A55D9A /* Assets.xcassets */; };
 		736FDEA424D8928300A55D9A /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736FDEA224D8928300A55D9A /* DataCollectionViewCell.swift */; };
@@ -18,10 +18,10 @@
 
 /* Begin PBXFileReference section */
 		47119891E1DC3C769BC22B49 /* libPods-ZoomCollectionView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZoomCollectionView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73267D7724E0846F003530DD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		736FDE8D24D88BDB00A55D9A /* ZoomCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZoomCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		736FDE9024D88BDB00A55D9A /* ZoomCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomCollectionView.h; sourceTree = "<group>"; };
 		736FDE9124D88BDB00A55D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		736FDE9A24D88E6C00A55D9A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../XCodeProjects/ZoomCollectionView/ZoomCollectionView/ViewController.swift; sourceTree = "<group>"; };
 		736FDE9E24D88F6900A55D9A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		736FDEA024D88F8000A55D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736FDEA224D8928300A55D9A /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -76,8 +76,8 @@
 				736FDEA224D8928300A55D9A /* DataCollectionViewCell.swift */,
 				736FDEA024D88F8000A55D9A /* Assets.xcassets */,
 				736FDE9E24D88F6900A55D9A /* Main.storyboard */,
-				736FDE9A24D88E6C00A55D9A /* ViewController.swift */,
 				736FDE9024D88BDB00A55D9A /* ZoomCollectionView.h */,
+				73267D7724E0846F003530DD /* ViewController.swift */,
 				736FDE9124D88BDB00A55D9A /* Info.plist */,
 			);
 			path = ZoomCollectionView;
@@ -199,9 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73267D7824E0846F003530DD /* ViewController.swift in Sources */,
 				736FDEA424D8928300A55D9A /* DataCollectionViewCell.swift in Sources */,
 				736FDEA524D8928300A55D9A /* CollDataModel.swift in Sources */,
-				736FDE9D24D88E6C00A55D9A /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
